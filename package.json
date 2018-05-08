@@ -1,0 +1,24 @@
+{
+  "name": "ExportCode",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "alan",
+  "contributors": [],
+  "dependencies": {
+    "arangojs": "6.2.0",
+    "bluebird": "latest",
+    "body-parser": "latest",
+    "compression": "latest",
+    "express": "latest",
+    "lodash": "latest",
+    "memoizee": "latest",
+    "restify": "4.1.1",
+    "tracer": "latest"
+  }
+}
