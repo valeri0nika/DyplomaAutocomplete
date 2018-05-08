@@ -156,7 +156,8 @@ function compare(a, b) {
   return 0;
 }
 
-server.listen(5005, '0.0.0.0', function() {
+var port = process.env.PORT || 3000;
+server.listen(port, function() {
 
   var host = server.address().address;
   var port = server.address().port;
