@@ -67,7 +67,7 @@ server.get('/rest/all', function(req, res, next) {
 server.get('/rest/auto/:name', function(req, res, next) {
   var name = req.params.name;
   if (!name) {
-    next();
+    return res.send([]);
   }
 
   autoNameMem(name).then(function(results) {
