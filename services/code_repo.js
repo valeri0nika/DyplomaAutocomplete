@@ -38,7 +38,6 @@ module.exports.moreIn = function(node) {
 module.exports.autoName = function(name) {
   name = 'prefix:' + name;
 
-//////////////////////
   var query = 'for e IN  FULLTEXT(export_nodes,\'name\', \'' + name + '\') \
                     FILTER e.code != ""\
                     LIMIT 10 return {"term": CONCAT(e.name,\'(\', e.code, \')\' ), "code":e.code, "id":e.id}';
